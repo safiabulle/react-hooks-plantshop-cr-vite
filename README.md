@@ -1,93 +1,89 @@
-# Phase 2 Code Challenge: Plantsy
+## Author: Safia Bulle
 
-## Demo
+## 3.1 Title and Description
+Plantshop React Application 
 
-Use this gif as an example of how the app should work.
+A React application that connects to a backend server to display plant data, add new plants, search through available plants, and mark plants as sold out.
 
-![Demo GIF](./demo.gif)
 
-## Instructions
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-Welcome to Plantsy! You've been tasked with building out some features for the
-admin side of a plant store. The designers have put together the components and
-CSS. Now it's up to you to bring the features to life by adding stateful logic
-as well as persisting data to the backend via our API.
+## installation
 
-Your job will be to make our app work according to the user stories you will
-find the [Deliverables](#Deliverables) section.
+Follow these steps to set up the project locally on your machine.
 
-## Setup
-
-1. Run `npm install` in your terminal.
-2. Run `npm run server`. This will run your backend on port `6001`.
-3. In a new terminal, run `npm run dev`.
-
-Make sure to open [http://localhost:6001/plants](http://localhost:6001/plants)
-in the browser to verify that your backend is working before you proceed!
-
-## Endpoints
-
-The base URL for your backend is: `http://localhost:6001`
-
-## Deliverables
-
-As a user:
-
-1. When the app starts, I can see all plants.
-2. I can add a new plant to the page by submitting the form.
-3. I can mark a plant as "sold out".
-4. I can search for plants by their name and see a filtered list of plants.
-
-### Endpoints for Core Deliverables
-
-#### GET /plants
-
-Example Response:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Aloe",
-    "image": "./images/aloe.jpg",
-    "price": 15.99
-  },
-  {
-    "id": 2,
-    "name": "ZZ Plant",
-    "image": "./images/zz-plant.jpg",
-    "price": 25.98
-  }
-]
+1. Clone the Repository
+```bash
+git clone git@github.com:safiabulle/react-hooks-plantshop-cr-vite.git
+```
+2. Navigate into the Project Folder
+```bash
+cd plantshop
+```
+3. Install Dependencies
+```bash
+npm install
+```
+4. Start the React Development Server
+```bash
+npm run dev
+```
+5. Start the Backend Server
+```bash
+npm run server
 ```
 
-#### POST `/plants`
+### Usage
+After starting both the frontend and backend servers:
 
-Required Headers:
+1. Open the application in your browser
+2. View all available plants
+3. Add a new plant using the form
+4. Search for plants using the search bar
+5. Mark plants as sold out using the button provided
 
-```js
-{
-  "Content-Type": "application/json"
-}
-```
+## Features
+View all plants on page load
+Add a new plant through a form
+Mark plants as sold out
+Search plants by name
+Dynamic rendering with React state
+Backend integration using fetch requests
+Responsive and clean interface
+Test suite using Vitest and React Testing Library
 
-Request Object:
 
-```json
-{
-  "name": "string",
-  "image": "string",
-  "price": number
-}
-```
+## Technologies Used
 
-Example Response:
+This project was built using:
 
-```json
-{
-  "id": 1,
-  "name": "Aloe",
-  "image": "./images/aloe.jpg",
-  "price": 15.99
-}
-```
+React — Frontend library
+Vite — Development environment
+JavaScript (ES6) — Application logic
+CSS3 — Styling and layout
+React Hooks — useState and useEffect
+JSON Server — Mock backend API
+Vitest — Testing framework
+React Testing Library — Component testing
+
+## Contributing
+
+Contributions are welcome!
+
+Fork the repository
+Create a new branch:
+git checkout -b feature-name
+Make your changes
+Push your branch:
+git push origin feature-name
+Open a pull request
+
+
+## license
+This project is for educational purposes.
